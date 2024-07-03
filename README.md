@@ -341,3 +341,10 @@ ORDER BY
    2)  A lot of products not sold were from the Home appliance category this is due to the high prices of products in the home appliance category.
    3)  The business recorder high male buyers to female buyers
    4)  The online Store recorded the highest sales volume.
+   5)  Gaspare Trevisan (SEX :MALE) from salemon in has the highest number of orders (36 orders)
+   6)  Matthew Flemming   (SEX :MALE)from califonia has the highest total spend of 61871.70.
+   7)  The Business recorderd its highest daily sales on the 2019-12-21.
+
+# RECOMMENDATIONS
+ 	1)
+
