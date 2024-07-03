@@ -1,5 +1,5 @@
 # INTRODUCTION
-I recently participated in an SQL challenge with EMPOVATION. during the course of this challenge, I learnt new things, connected with other people taking the callenge and also horned my SQL skills. 
+I recently participated in an SQL challenge with EMPOVATION. Throughout this challenge, I not only learned new concepts but also connected with fellow participants, enhancing my SQL skills along the way.
 
 The dataset provided is an electronics stores dataset conprisig of the customer table, the sales table , the stores table , the products table , the categories table and the exchanged rates table. The datasets provides the customer details, the stores details , the products details and the  company's business transaction between the year 2016 to 2021 across eight contries in Australia, Europe and North America.
 
@@ -291,7 +291,7 @@ FROM ANNUAL_SALES
 WHERE ORDER_YEAR IN (2020, 2021)
 ORDER BY CATEGORYKEY, ORDER_YEAR;`
 
-
+![](QUES_16.png)
 
 ### QUESTION 17:WRITE A SQL QUERY TO FIND EACH CUSTOMER'S PURCHASE RANK WITHIN THE STORE THEY BOUGHT FROM, BASED ON THE TOTAL PRICE OF THE ORDER(QUANTITY * UNIT PRICE)
 `WITH CUSTOMERTOTALSALES AS (
@@ -308,6 +308,7 @@ FROM
 ORDER BY
      CTS.CUSTOMERKEY, CTS.PURCHASE_RANK;`
 
+![](QUES_17.png)
 ### QUESTION 18:CUSTOMER RETENSION ANALYSIS
 `WITH FIRSTPURCHASEDATE AS (
     SELECT CUSTOMERKEY, MIN(ORDER_DATE) AS FIRST_PURCHASE_DATES
@@ -335,16 +336,22 @@ GROUP BY
     C.GENDER,DATEDIFF(YEAR, C.BIRTHDAY, GETDATE()),C.CITY,C.STATE_CODE,C.COUNTRY, COALESCE(RP.REPEAT_PURCHASE_COUNT, 0)
 ORDER BY
    C.GENDER,DATEDIFF(YEAR, C.BIRTHDAY, GETDATE()),C.CITY,C.STATE_CODE,C.COUNTRY;`
+   
+![](QUES_18.png)
 
    # INSIGHTS
-   1) Store key 0 had the highest sales transactions with a total sales amount of 13165.
-   2)  A lot of products not sold were from the Home appliance category this is due to the high prices of products in the home appliance category.
-   3)  The business recorder high male buyers to female buyers
-   4)  The online Store recorded the highest sales volume.
-   5)  Gaspare Trevisan (SEX :MALE) from salemon in has the highest number of orders (36 orders)
-   6)  Matthew Flemming   (SEX :MALE)from califonia has the highest total spend of 61871.70.
-   7)  The Business recorderd its highest daily sales on the 2019-12-21.
+   1) Store key 0 achieved the highest sales volume, totaling $13,165 across transactions.
+  2) Many unsold products belonged to the Home Appliance category, largely because of the category's high product prices.
+   3) The business saw a higher number of male buyers compared to female buyers.
+   4) The online store achieved its highest sales volume.
+   5) Gaspare Trevisan (Male), from Salemon, has the highest number of orders: 36 orders.
+   6) Matthew Flemming (Male), from California, has the highest total spend of $61,871.70.
+   7) The business recorded its highest daily sales on December 21, 2019
 
 # RECOMMENDATIONS
- 	1)
+1)Sufficient attention should be devoted to the online store, including customer satisfaction, app graphics, and seamless transactions.
+2)More men's clothing should be sold compared to women's.
+3)Prices for products in the home appliances category should be reviewed and adjusted so that people from low-income communities and those in low-income jobs can afford more home appliances.
+
+ # THANK YOUUUUU
 
