@@ -1,13 +1,107 @@
-# EMPOVATION_JUNE_SQL_CHALLENGE
 # INTRODUCTION
+I recently participated in an SQL challenge with EMPOVATION. during the course of this challenge, I learnt new things, connected with other people taking the callenge and also horned my SQL skills. 
+
+The dataset provided is an electronics stores dataset conprisig of the customer table, the sales table , the stores table , the products table , the categories table and the exchanged rates table. The datasets provides the customer details, the stores details , the products details and the  company's business transaction between the year 2016 to 2021 across eight contries in Australia, Europe and North America.
+
+# DATA DICTIONARY
+SALES TABLE
+
+Order Number:	Unique ID for each orders
+
+Line Item:	Identifies individual products purchased as part of an order
+
+Order Date:	Date the order was placed	
+
+Delivery Date:	Date the order was delivered	
+
+CustomerKey:	Unique key identifying which customer placed the order
+
+StoreKey:	Unique key identifying which store processed the order
+
+ProductKey:	Unique key identifying which product was purchased
+
+Quantity:	Number of items purchased
+
+Currency Code:	Currency used to process the order
+
+CATEGORIES TABLE
+
+CategoryKey:	Key to identify product categories
+
+Category:	Product category name
+
+SubcategoryKey:	Key to identify product subcategories
+
+Subcategory:	Product subcategory name
+
+CUSTOMER TABLE
+Gender:	Customer gender
+
+Name:	Customer full name
+
+City:	Customer city
+
+State Code:	Customer state (abbreviated)
+
+State:	Customer state (full)
+
+Zip Code:	Customer zip code
+
+Country:  Customer country
+
+Continent:	Customer continent
+
+Birthday:	Customer date of birth
+
+PRODUTS TABLE
+
+ProductKey:	Primary key to identify products
+
+Product Name:	Product name
+
+Brand: Product brand
+
+Color:	Product color
+
+Unit Cost USD:	Cost to produce the product in USD
+
+Unit Price USD:	Product list price in USD
+
+SubcategoryKey:	Key to identify product subcategories
+
+Subcategory:	Product subcategory name
+
+STORES TABLE
+
+StoreKey:	Primary key to identify stores
+
+Country:	Store country
+
+State:	Store state
+
+Square Meters:	Store footprint in square meters
+
+Open Date:	Store open date
+
+EXCHANGE RATES TABLE
+Date:	Date
+
+Currency:	Currency code
+
+Exchange:	Exchange rate compared to USD
+
+
 # DATA CLEANING
-####  REMOVING DUPLICATES; I CHEACKED FOR DUPLICATES IN EVERY TABLE, THE CATEGORIES TABLE WAS THE ONLY TABLE WITH DUPLICATES
+####  REMOVING DUPLICATES; I CHEACKED FOR  IN EVERY TABLE, THE CATEGORIES TABLE WAS THE ONLY TABLE WITH DUPLICATESCustomerKey	Primary key to identify customers
+
 ![](DUPLICATES_IN_THE_CATEGORIES_TABLE.png)
 
 ### I CLEANED THE TABLE IN MICROSOFT EXCEL
+
 ![](REMOVING_DUPLICATES_CAT_EXCEL.png)
 
 ### RECHEACKED FOR DUPLICATES
+
 ![](DUPLICATES_GONE.png)
 
 ## EXPLORATORY DATA ANALYSIS
@@ -242,6 +336,8 @@ GROUP BY
 ORDER BY
    C.GENDER,DATEDIFF(YEAR, C.BIRTHDAY, GETDATE()),C.CITY,C.STATE_CODE,C.COUNTRY;`
 
-
-
-
+   # INSIGHTS
+   1) Store key 0 had the highest sales transactions with a total sales amount of 13165.
+   2)  A lot of products not sold were from the Home appliance category this is due to the high prices of products in the home appliance category.
+   3)  The business recorder high male buyers to female buyers
+   4)  The online Store recorded the highest sales volume.
