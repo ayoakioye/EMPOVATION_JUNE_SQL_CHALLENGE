@@ -1,5 +1,5 @@
 # INTRODUCTION
-I recently participated in an SQL challenge with EMPOVATION. Throughout this challenge, I not only learned new concepts but also connected with fellow participants, enhancing my SQL skills along the way.
+I recently participated in an SQL challenge with EMPOVATION. Throughout this challenge, I not only learnt new concepts but also connected with fellow participants, enhancing my SQL skills along the way.
 
 The dataset provided is an electronics stores dataset conprisig of the customer table, the sales table , the stores table , the products table , the categories table and the exchanged rates table. The datasets provides the customer details, the stores details , the products details and the  company's business transaction between the year 2016 to 2021 across eight contries in Australia, Europe and North America.
 
