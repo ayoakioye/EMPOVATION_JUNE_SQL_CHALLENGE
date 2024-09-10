@@ -350,7 +350,9 @@ ORDER BY
 
 # RECOMMENDATIONS
 1)Sufficient attention should be devoted to the online store, including customer satisfaction, app graphics, and seamless transactions.
+
 2)More men's clothing should be sold compared to women's.
+
 3)Prices for products in the home appliances category should be reviewed and adjusted so that people from low-income communities and those in low-income jobs can afford more home appliances.
 
  # THANK YOUUUUU
